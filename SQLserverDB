@@ -1,0 +1,31 @@
+
+
+Create Database MyDb;
+use MyDb;
+
+-- Create Students table
+CREATE TABLE Students (
+    id INT PRIMARY KEY IDENTITY(1,1),
+    studentname VARCHAR(50) NOT NULL,
+    Age INT,
+    class VARCHAR(10),
+    Rollno INT
+);
+
+-- Insert five records
+INSERT INTO Students (studentname, Age, class, Rollno)
+VALUES ('Arjun Sharma', 16, '10A', 101);
+
+INSERT INTO Students (studentname, Age, class, Rollno)
+VALUES ('Priya Patel', 15, '9B', 203);
+
+INSERT INTO Students (studentname, Age, class, Rollno)
+VALUES ('Raj Malhotra', 17, '12C', 315);
+
+INSERT INTO Students (studentname, Age, class, Rollno)
+VALUES ('Ananya Singh', 14, '8A', 422);
+
+INSERT INTO Students (studentname, Age, class, Rollno)
+VALUES ('Vikram Reddy', 16, '10B', 519);
+
+Select * From Students;
